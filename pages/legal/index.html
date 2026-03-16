@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legal Hub - FPV Build Lab Ireland</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            background: #0a0f1e;
+            color: #e5e7eb;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .navbar {
+            background: #0f1422;
+            border-bottom: 1px solid #2d3748;
+            padding: 1rem 2rem;
+        }
+        
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            color: #60a5fa;
+            text-decoration: none;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        
+        .back-link {
+            color: #9ca3af;
+            text-decoration: none;
+        }
+        
+        .back-link:hover {
+            color: #60a5fa;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            color: white;
+            margin-bottom: 0.5rem;
+        }
+        
+        .subtitle {
+            color: #9ca3af;
+            margin-bottom: 3rem;
+        }
+        
+        .legal-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+        
+        .legal-card {
+            background: #1a1f2f;
+            border: 1px solid #2d3748;
+            border-radius: 15px;
+            padding: 1.5rem;
+            transition: all 0.3s;
+        }
+        
+        .legal-card:hover {
+            border-color: #60a5fa;
+            transform: translateY(-5px);
+        }
+        
+        .legal-icon {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+        
+        .legal-card h2 {
+            color: white;
+            margin-bottom: 0.5rem;
+            font-size: 1.3rem;
+        }
+        
+        .legal-card p {
+            color: #9ca3af;
+            margin-bottom: 1rem;
+            font-size: 0.9rem;
+        }
+        
+        .legal-link {
+            color: #60a5fa;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .legal-link:hover {
+            text-decoration: underline;
+        }
+        
+        .badge-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin: 2rem 0;
+        }
+        
+        .badge {
+            background: #1e293b;
+            color: #9ca3af;
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+        }
+        
+        .footer {
+            text-align: center;
+            padding: 2rem;
+            color: #6b7280;
+            border-top: 1px solid #2d3748;
+            margin-top: 3rem;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="logo">FPV BUILD LAB</a>
+            <a href="../index.html" class="back-link">← Back to Shop</a>
+        </div>
+    </nav>
+    
+    <div class="container">
+        <h1>⚖️ Legal & Compliance Hub</h1>
+        <p class="subtitle">Everything you need to know about our policies, compliance, and your rights as a customer.</p>
+        
+        <div class="badge-container">
+            <span class="badge">🇮🇪 Irish Business</span>
+            <span class="badge">✅ CE Certified</span>
+            <span class="badge">🔒 GDPR Compliant</span>
+            <span class="badge">♻️ WEEE Registered</span>
+            <span class="badge">📦 DG Shipping</span>
+        </div>
+        
+        <div class="legal-grid">
+            <!-- Business Info -->
+            <div class="legal-card">
+                <div class="legal-icon">🏢</div>
+                <h2>Business Information</h2>
+                <p>Legal entity details, VAT number, CRO registration, and contact information.</p>
+                <a href="imprint.html" class="legal-link">View Imprint →</a>
+            </div>
+            
+            <!-- Privacy -->
+            <div class="legal-card">
+                <div class="legal-icon">🔒</div>
+                <h2>Privacy Policy (GDPR)</h2>
+                <p>How we collect, use, and protect your personal data. Your rights under GDPR.</p>
+                <a href="privacy.html" class="legal-link">Read Privacy Policy →</a>
+            </div>
+            
+            <!-- Terms -->
+            <div class="legal-card">
+                <div class="legal-icon">📝</div>
+                <h2>Terms & Conditions</h2>
+                <p>Contract terms, warranty information, liability limitations, and governing law.</p>
+                <a href="terms.html" class="legal-link">Read Terms →</a>
+            </div>
+            
+            <!-- Returns -->
+            <div class="legal-card">
+                <div class="legal-icon">🔄</div>
+                <h2>Returns & Cooling-Off</h2>
+                <p>Your 14-day right to cancel, return process, and exceptions for digital goods.</p>
+                <a href="returns.html" class="legal-link">View Returns Policy →</a>
+            </div>
+            
+            <!-- Shipping (Dangerous Goods) -->
+            <div class="legal-card">
+                <div class="legal-icon">📦</div>
+                <h2>Dangerous Goods Policy</h2>
+                <p>LiPo battery shipping regulations, DG surcharges, and safety requirements.</p>
+                <a href="shipping.html" class="legal-link">Read DG Policy →</a>
+            </div>
+            
+            <!-- WEEE -->
+            <div class="legal-card">
+                <div class="legal-icon">♻️</div>
+                <h2>WEEE Compliance</h2>
+                <p>Electrical waste recycling obligations and our WEEE registration details.</p>
+                <a href="weee.html" class="legal-link">View WEEE Info →</a>
+            </div>
+            
+            <!-- Compliance / CE -->
+            <div class="legal-card">
+                <div class="legal-icon">✅</div>
+                <h2>EU Declarations</h2>
+                <p>CE certification, EU Regulation 2019/945 compliance, and class identification.</p>
+                <a href="compliance.html" class="legal-link">View Compliance Docs →</a>
+            </div>
+            
+            <!-- Cookie Policy -->
+            <div class="legal-card">
+                <div class="legal-icon">🍪</div>
+                <h2>Cookie Policy</h2>
+                <p>How we use cookies, consent management, and opting out.</p>
+                <a href="cookie-policy.html" class="legal-link">Read Cookie Policy →</a>
+            </div>
+            
+            <!-- Liability -->
+            <div class="legal-card">
+                <div class="legal-icon">⚠️</div>
+                <h2>Liability Disclaimer</h2>
+                <p>Limitations of liability, safety warnings, and operator responsibilities.</p>
+                <a href="liability.html" class="legal-link">View Disclaimer →</a>
+            </div>
+        </div>
+        
+        <!-- Quick Contact -->
+        <div style="background: #1a1f2f; border-radius: 15px; padding: 2rem; margin-top: 3rem; text-align: center;">
+            <h3 style="color: white; margin-bottom: 1rem;">Need More Information?</h3>
+            <p style="color: #9ca3af; margin-bottom: 1.5rem;">We're happy to answer any legal or compliance questions.</p>
+            <a href="mailto:legal@fpvbuildlab.ie" style="color: #60a5fa;">legal@fpvbuildlab.ie</a>
+        </div>
+    </div>
+    
+    <div class="footer">
+        <p>© 2026 FPV BUILD LAB (Ireland) - All rights reserved</p>
+    </div>
+</body>
+</html>

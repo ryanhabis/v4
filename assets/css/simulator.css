@@ -1,0 +1,477 @@
+/* ===== SIMULATOR PAGE STYLES ===== */
+.page-header {
+    background: linear-gradient(145deg, #0f1422, #1a1f2f);
+    padding: 8rem 2rem 4rem;
+    text-align: center;
+    border-bottom: 1px solid #2d3748;
+}
+
+.page-header h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    background: linear-gradient(135deg, #fff, #94a3b8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.page-header p {
+    font-size: 1.2rem;
+    color: #9ca3af;
+    max-width: 800px;
+    margin: 0 auto 2rem;
+}
+
+.save-badge {
+    display: inline-block;
+    background: #10b981;
+    color: white;
+    padding: 0.5rem 1.5rem;
+    border-radius: 50px;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+/* ===== TRUST BANNER ===== */
+.trust-banner {
+    background: #1a1f2f;
+    border-bottom: 1px solid #2d3748;
+    padding: 1rem;
+}
+
+.trust-grid {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+
+.trust-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #9ca3af;
+    font-size: 0.95rem;
+}
+
+/* ===== INTRO CARD ===== */
+.intro-card {
+    background: linear-gradient(145deg, #1a1f2f, #0f1422);
+    border: 1px solid #60a5fa;
+    border-radius: 30px;
+    padding: 3rem;
+    margin-bottom: 4rem;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 3rem;
+    align-items: center;
+}
+
+.intro-card h3 {
+    color: white;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.intro-card p {
+    color: #9ca3af;
+    margin-bottom: 1.5rem;
+}
+
+.intro-stats {
+    display: flex;
+    gap: 2rem;
+}
+
+.stat {
+    text-align: center;
+}
+
+.stat-number {
+    font-size: 2rem;
+    color: #60a5fa;
+    font-weight: bold;
+}
+
+.stat-label {
+    color: #9ca3af;
+    font-size: 0.9rem;
+}
+
+/* ===== SIMULATOR GRID ===== */
+.simulator-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    margin: 3rem 0;
+}
+
+.simulator-card {
+    background: #1a1f2f;
+    border: 1px solid #2d3748;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: all 0.3s;
+    position: relative;
+}
+
+.simulator-card:hover {
+    transform: translateY(-5px);
+    border-color: #60a5fa;
+    box-shadow: 0 20px 40px rgba(96, 165, 250, 0.2);
+}
+
+.simulator-badge {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: #ef4444;
+    color: white;
+    padding: 0.3rem 1rem;
+    border-radius: 50px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    z-index: 1;
+}
+
+.simulator-image {
+    height: 200px;
+    overflow: hidden;
+}
+
+.simulator-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s;
+}
+
+.simulator-card:hover .simulator-image img {
+    transform: scale(1.05);
+}
+
+.simulator-content {
+    padding: 1.5rem;
+}
+
+.simulator-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.simulator-title h3 {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.simulator-price {
+    color: #60a5fa;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.simulator-description {
+    color: #9ca3af;
+    margin-bottom: 1rem;
+    font-size: 0.95rem;
+}
+
+.simulator-features {
+    list-style: none;
+    margin: 1rem 0;
+}
+
+.simulator-features li {
+    color: #d1d5db;
+    margin-bottom: 0.5rem;
+    padding-left: 1.5rem;
+    position: relative;
+    font-size: 0.9rem;
+}
+
+.simulator-features li::before {
+    content: "✓";
+    color: #60a5fa;
+    position: absolute;
+    left: 0;
+}
+
+.platform-tags {
+    display: flex;
+    gap: 0.5rem;
+    margin: 1rem 0;
+    flex-wrap: wrap;
+}
+
+.platform-tag {
+    background: #2d3748;
+    padding: 0.2rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    color: #9ca3af;
+}
+
+.platform-tag.steam {
+    background: #1b2838;
+    color: #66c0f4;
+    border: 1px solid #66c0f4;
+}
+
+.platform-tag.epic {
+    background: #2a2a2a;
+    color: white;
+    border: 1px solid white;
+}
+
+.buy-buttons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.buy-button {
+    flex: 1;
+    text-align: center;
+    padding: 0.8rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+.buy-button.steam {
+    background: #1b2838;
+    color: #66c0f4;
+    border: 1px solid #66c0f4;
+}
+
+.buy-button.steam:hover {
+    background: #2a3f5e;
+}
+
+.buy-button.epic {
+    background: #2a2a2a;
+    color: white;
+    border: 1px solid white;
+}
+
+.buy-button.epic:hover {
+    background: #3a3a3a;
+}
+
+.buy-button.itch {
+    background: #fa5c5c;
+    color: white;
+}
+
+.buy-button.itch:hover {
+    background: #ff7a7a;
+}
+
+.buy-button.website {
+    background: #4b5563;
+    color: white;
+}
+
+/* ===== COMPARISON TABLE ===== */
+.comparison-section {
+    background: #1a1f2f;
+    border-radius: 30px;
+    padding: 3rem;
+    margin: 4rem 0;
+    border: 1px solid #2d3748;
+}
+
+.comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 2rem;
+}
+
+.comparison-table th {
+    text-align: left;
+    padding: 1rem;
+    background: #0f1422;
+    color: #60a5fa;
+    border-bottom: 2px solid #2d3748;
+}
+
+.comparison-table td {
+    padding: 1rem;
+    border-bottom: 1px solid #2d3748;
+    color: #9ca3af;
+}
+
+.comparison-table tr:hover td {
+    background: #0f1422;
+}
+
+.rating {
+    color: #fbbf24;
+    font-size: 1.1rem;
+}
+
+.check-yes {
+    color: #10b981;
+    font-weight: bold;
+}
+
+.check-no {
+    color: #ef4444;
+}
+
+/* ===== BEGINNER GUIDE ===== */
+.guide-section {
+    background: linear-gradient(145deg, #0f1422, #1a1f2f);
+    border-radius: 30px;
+    padding: 3rem;
+    margin: 4rem 0;
+    border: 1px solid #60a5fa;
+}
+
+.guide-steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.guide-step {
+    text-align: center;
+}
+
+.step-number-circle {
+    width: 50px;
+    height: 50px;
+    background: #60a5fa;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0 auto 1rem;
+}
+
+.guide-step h4 {
+    color: white;
+    margin-bottom: 0.5rem;
+}
+
+.guide-step p {
+    color: #9ca3af;
+    font-size: 0.9rem;
+}
+
+/* ===== HARDWARE GUIDE ===== */
+.hardware-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.hardware-card {
+    background: #1a1f2f;
+    border: 1px solid #2d3748;
+    border-radius: 20px;
+    padding: 2rem;
+    text-align: center;
+}
+
+.hardware-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hardware-card h4 {
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.hardware-card p {
+    color: #9ca3af;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.hardware-link {
+    color: #60a5fa;
+    text-decoration: none;
+}
+
+/* ===== FAQ SECTION ===== */
+.faq-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 2rem;
+    margin: 3rem 0;
+}
+
+.faq-item {
+    background: #1a1f2f;
+    border: 1px solid #2d3748;
+    border-radius: 15px;
+    padding: 1.5rem;
+}
+
+.faq-item h4 {
+    color: white;
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.faq-item p {
+    color: #9ca3af;
+    font-size: 0.95rem;
+}
+
+/* ===== LEGAL NOTE ===== */
+.legal-note {
+    background: rgba(239, 68, 68, 0.1);
+    border-left: 4px solid #ef4444;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin: 3rem 0;
+    font-size: 0.9rem;
+}
+
+.legal-note a {
+    color: #60a5fa;
+    text-decoration: none;
+}
+
+.commission-note {
+    background: #1a1f2f;
+    border: 1px solid #2d3748;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+    color: #9ca3af;
+    font-size: 0.9rem;
+    margin: 2rem 0;
+}
+
+/* ===== RESPONSIVE (Simulator Specific) ===== */
+@media (max-width: 768px) {
+    .page-header h1 {
+        font-size: 2.5rem;
+    }
+
+    .intro-card {
+        grid-template-columns: 1fr;
+    }
+
+    .intro-stats {
+        justify-content: center;
+    }
+
+    .comparison-table {
+        display: block;
+        overflow-x: auto;
+    }
+}

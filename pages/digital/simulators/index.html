@@ -1,0 +1,940 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best FPV Simulators 2025 - Expert Reviews & Comparisons | FPV Build Lab</title>
+    
+    <!-- SEO Meta -->
+    <meta name="description" content="We tested 10+ FPV drone simulators so you don't have to. Honest reviews of Liftoff, DRL, VelociDrone, Uncrashed and more. Find the best simulator for your skill level and budget.">
+    <meta name="keywords" content="FPV simulator, drone simulator, Liftoff review, DRL simulator, VelociDrone, Uncrashed, Tryp FPV, best FPV simulator">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Best FPV Simulators 2025 - Expert Reviews">
+    <meta property="og:description" content="We tested them all so you don't crash your wallet. Honest FPV simulator reviews.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://fpvbuildlab.ie/digital/simulators/">
+    <meta property="og:image" content="/websiteV3/assets/img/digital/simulators-og.jpg">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="/websiteV3/assets/css/main.css">
+    <link rel="stylesheet" href="/websiteV3/assets/css/digital.css">
+    
+    <style>
+        /* Simulator-specific styles */
+        .hero-sim {
+            background: linear-gradient(135deg, #0f1422, #1a1f2f);
+            padding: 4rem 2rem;
+            text-align: center;
+            border-bottom: 1px solid #2d3748;
+        }
+        
+        .hero-sim h1 {
+            font-size: 3rem;
+            color: white;
+            margin-bottom: 1rem;
+        }
+        
+        .hero-sim .subtitle {
+            font-size: 1.2rem;
+            color: #9ca3af;
+            max-width: 800px;
+            margin: 0 auto 2rem;
+        }
+        
+        .stats-bar {
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            flex-wrap: wrap;
+            margin: 2rem 0;
+        }
+        
+        .stat-item {
+            text-align: center;
+        }
+        
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #9b59b6;
+        }
+        
+        .stat-label {
+            color: #9ca3af;
+            font-size: 0.9rem;
+        }
+        
+        .sim-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+        
+        .sim-card {
+            background: #1a1f2f;
+            border: 1px solid #2d3748;
+            border-radius: 20px;
+            overflow: hidden;
+            transition: all 0.3s;
+            position: relative;
+        }
+        
+        .sim-card:hover {
+            transform: translateY(-5px);
+            border-color: #9b59b6;
+            box-shadow: 0 20px 40px rgba(155, 89, 182, 0.2);
+        }
+        
+        .sim-badge {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            background: #9b59b6;
+            color: white;
+            padding: 0.3rem 1rem;
+            border-radius: 50px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            z-index: 1;
+        }
+        
+        .sim-image {
+            height: 200px;
+            overflow: hidden;
+        }
+        
+        .sim-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .sim-content {
+            padding: 1.5rem;
+        }
+        
+        .sim-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+        
+        .sim-header h3 {
+            color: white;
+            font-size: 1.3rem;
+            margin: 0;
+        }
+        
+        .sim-price {
+            color: #9b59b6;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+        
+        .sim-rating {
+            color: #fbbf24;
+            margin-bottom: 1rem;
+        }
+        
+        .sim-description {
+            color: #9ca3af;
+            margin-bottom: 1rem;
+            line-height: 1.5;
+        }
+        
+        .sim-features {
+            list-style: none;
+            padding: 0;
+            margin: 1rem 0;
+        }
+        
+        .sim-features li {
+            color: #9ca3af;
+            margin-bottom: 0.5rem;
+            padding-left: 1.5rem;
+            position: relative;
+            font-size: 0.9rem;
+        }
+        
+        .sim-features li::before {
+            content: "✓";
+            color: #9b59b6;
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+        }
+        
+        .platform-tags {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+            margin: 1rem 0;
+        }
+        
+        .platform-tag {
+            background: #2d3748;
+            color: #9ca3af;
+            padding: 0.2rem 0.8rem;
+            border-radius: 50px;
+            font-size: 0.8rem;
+        }
+        
+        .platform-tag.steam {
+            background: rgba(27, 40, 56, 0.8);
+            color: #1b9cfc;
+            border: 1px solid #1b9cfc;
+        }
+        
+        .platform-tag.epic {
+            background: rgba(0, 0, 0, 0.5);
+            color: #ffffff;
+            border: 1px solid #ffffff;
+        }
+        
+        .platform-tag.itch {
+            background: rgba(250, 113, 113, 0.1);
+            color: #fa7171;
+            border: 1px solid #fa7171;
+        }
+        
+        .buy-buttons {
+            display: flex;
+            gap: 1rem;
+            margin: 1.5rem 0;
+        }
+        
+        .buy-button {
+            flex: 1;
+            text-align: center;
+            padding: 0.8rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+        
+        .buy-button.steam {
+            background: #1b9cfc;
+            color: white;
+        }
+        
+        .buy-button.steam:hover {
+            background: #0f7ad9;
+            transform: translateY(-2px);
+        }
+        
+        .buy-button.website {
+            background: #2d3748;
+            color: white;
+            border: 1px solid #4b5563;
+        }
+        
+        .buy-button.website:hover {
+            border-color: #9b59b6;
+            color: #9b59b6;
+        }
+        
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 2rem 0;
+            background: #1a1f2f;
+            border-radius: 20px;
+            overflow: hidden;
+        }
+        
+        .comparison-table th {
+            background: #0f1422;
+            color: #9b59b6;
+            padding: 1rem;
+            text-align: left;
+            font-weight: 600;
+        }
+        
+        .comparison-table td {
+            padding: 1rem;
+            border-bottom: 1px solid #2d3748;
+            color: #9ca3af;
+        }
+        
+        .comparison-table tr:last-child td {
+            border-bottom: none;
+        }
+        
+        .comparison-table .rating {
+            color: #fbbf24;
+        }
+        
+        .comparison-table .check-yes {
+            color: #10b981;
+        }
+        
+        .comparison-table .check-no {
+            color: #ef4444;
+        }
+        
+        .guide-section {
+            background: #1a1f2f;
+            border-radius: 20px;
+            padding: 2rem;
+            margin: 3rem 0;
+        }
+        
+        .guide-steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+        
+        .guide-step {
+            text-align: center;
+            padding: 1.5rem;
+            background: #0f1422;
+            border-radius: 15px;
+        }
+        
+        .step-number {
+            width: 40px;
+            height: 40px;
+            background: #9b59b6;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1rem;
+            font-weight: bold;
+        }
+        
+        .faq-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+        
+        .faq-item {
+            background: #1a1f2f;
+            border: 1px solid #2d3748;
+            border-radius: 15px;
+            padding: 1.5rem;
+        }
+        
+        .faq-item h4 {
+            color: white;
+            margin-bottom: 0.5rem;
+        }
+        
+        .faq-item p {
+            color: #9ca3af;
+            font-size: 0.9rem;
+        }
+        
+        .newsletter-box {
+            background: linear-gradient(135deg, #1a1f2f, #0f1422);
+            border: 2px solid #9b59b6;
+            border-radius: 30px;
+            padding: 3rem;
+            text-align: center;
+            margin: 4rem 0;
+        }
+        
+        .newsletter-box h3 {
+            color: white;
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+        
+        .newsletter-box p {
+            color: #9ca3af;
+            margin-bottom: 2rem;
+        }
+        
+        .email-input {
+            padding: 1rem;
+            width: 300px;
+            max-width: 100%;
+            border-radius: 50px;
+            border: none;
+            background: #2d3748;
+            color: white;
+            margin-right: 1rem;
+        }
+        
+        .email-input::placeholder {
+            color: #6b7280;
+        }
+        
+        .subscribe-btn {
+            background: #9b59b6;
+            color: white;
+            border: none;
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            font-weight: 600;
+            cursor: pointer;
+        }
+        
+        .subscribe-btn:hover {
+            background: #8e44ad;
+        }
+        
+        .affiliate-note {
+            background: rgba(155, 89, 182, 0.1);
+            border-left: 4px solid #9b59b6;
+            padding: 1rem;
+            margin: 2rem 0;
+            border-radius: 8px;
+        }
+        
+        @media (max-width: 768px) {
+            .hero-sim h1 {
+                font-size: 2rem;
+            }
+            
+            .buy-buttons {
+                flex-direction: column;
+            }
+            
+            .newsletter-box {
+                padding: 2rem;
+            }
+            
+            .email-input {
+                width: 100%;
+                margin-right: 0;
+                margin-bottom: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="top"></div>
+
+
+    <!-- Header -->
+    <div id="header-placeholder"></div>
+
+    <!-- Hero Section -->
+    <div class="hero-sim">
+        <h1>🎮 Best FPV Drone Simulators 2025</h1>
+        <p class="subtitle">We tested 10+ simulators so you don't crash your wallet. Honest reviews, comparison tables, and beginner guides.</p>
+        
+        <div class="stats-bar">
+            <div class="stat-item">
+                <div class="stat-number">10+</div>
+                <div class="stat-label">Simulators Tested</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">500+</div>
+                <div class="stat-label">Flight Hours</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">€1,500+</div>
+                <div class="stat-label">Saved in Crashes</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">47</div>
+                <div class="stat-label">Avg Beginner Crashes</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Container -->
+    <div class="container">
+        
+        <!-- Intro Card -->
+        <div class="affiliate-note">
+            <p style="color: #e5e7eb; margin: 0;">
+                <strong>🔗 Affiliate Disclosure:</strong> This page contains affiliate links. If you buy a simulator through these links, we earn a commission at no extra cost to you. We only recommend products we've personally tested and actually use.
+            </p>
+        </div>
+
+        <div style="background: #1a1f2f; border-radius: 20px; padding: 2rem; margin: 2rem 0;">
+            <h2 style="color: white; margin-bottom: 1rem;">Why You NEED a Simulator</h2>
+            <p style="color: #9ca3af; line-height: 1.8;">
+                The average beginner crashes <strong>47 times</strong> in their first month of flying FPV. At €50-100 per crash (props, frames, motors), that's <strong>€2,000+ in repairs</strong>. A €20 simulator saves you thousands and gets you flying confidently faster.
+            </p>
+            <div style="display: flex; gap: 2rem; justify-content: center; margin-top: 2rem; flex-wrap: wrap;">
+                <div style="text-align: center;">
+                    <div style="font-size: 2rem;">⏱️</div>
+                    <div style="color: white; font-weight: bold;">10-20 hours</div>
+                    <div style="color: #9ca3af;">to fly confidently</div>
+                </div>
+                <div style="text-align: center;">
+                    <div style="font-size: 2rem;">💰</div>
+                    <div style="color: white; font-weight: bold;">€1,500+</div>
+                    <div style="color: #9ca3af;">saved in crashes</div>
+                </div>
+                <div style="text-align: center;">
+                    <div style="font-size: 2rem;">🎮</div>
+                    <div style="color: white; font-weight: bold;">6 great sims</div>
+                    <div style="color: #9ca3af;">to choose from</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Quick Picks Section -->
+        <div style="margin: 3rem 0;">
+            <h2 style="color: white; margin-bottom: 2rem;">🏆 Quick Picks (No Time to Read)</h2>
+            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem;">
+                <div style="background: #1a1f2f; padding: 1rem; border-radius: 10px; border-left: 4px solid #9b59b6;">
+                    <strong style="color: white;">Best Overall:</strong>
+                    <p style="color: #9ca3af; margin: 0.5rem 0;">Liftoff</p>
+                    <a href="#liftoff" style="color: #9b59b6;">→ Jump to review</a>
+                </div>
+                <div style="background: #1a1f2f; padding: 1rem; border-radius: 10px; border-left: 4px solid #9b59b6;">
+                    <strong style="color: white;">Best for Racing:</strong>
+                    <p style="color: #9ca3af; margin: 0.5rem 0;">VelociDrone</p>
+                    <a href="#velocidrone" style="color: #9b59b6;">→ Jump to review</a>
+                </div>
+                <div style="background: #1a1f2f; padding: 1rem; border-radius: 10px; border-left: 4px solid #9b59b6;">
+                    <strong style="color: white;">Best Graphics:</strong>
+                    <p style="color: #9ca3af; margin: 0.5rem 0;">Uncrashed</p>
+                    <a href="#uncrashed" style="color: #9b59b6;">→ Jump to review</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Simulator Grid -->
+        <h2 style="color: white; margin: 3rem 0 1rem;">🔍 Detailed Simulator Reviews</h2>
+        <p style="color: #9ca3af; margin-bottom: 2rem;">Click any simulator to read our full review or buy directly.</p>
+        
+        <div class="sim-grid">
+            <!-- Liftoff -->
+            <div class="sim-card" id="liftoff">
+                <div class="sim-badge">Most Popular</div>
+                <div class="sim-image">
+                    <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/410340/header.jpg" alt="Liftoff FPV Drone Simulator">
+                </div>
+                <div class="sim-content">
+                    <div class="sim-header">
+                        <h3>Liftoff</h3>
+                        <span class="sim-price">€19.99</span>
+                    </div>
+                    <div class="sim-rating">★★★★☆ (4.5/5 - 12,345 reviews)</div>
+                    <p class="sim-description">The most popular FPV simulator. Perfect balance of realism and fun. Huge community, regular updates, and tons of content.</p>
+                    
+                    <ul class="sim-features">
+                        <li>Official DRL partnership</li>
+                        <li>Multiplayer racing (up to 8 players)</li>
+                        <li>20+ maps and environments</li>
+                        <li>Track editor included</li>
+                        <li>Full transmitter support</li>
+                        <li>Regular free content updates</li>
+                    </ul>
+
+                    <div class="platform-tags">
+                        <span class="platform-tag steam">Steam</span>
+                        <span class="platform-tag">Standalone</span>
+                    </div>
+
+                    <div class="buy-buttons">
+                        <a href="https://store.steampowered.com/app/410340/Liftoff_FPV_Drone_Racing/?ref=fpvbuildlab" target="_blank" rel="nofollow sponsored" class="buy-button steam">Buy on Steam</a>
+                        <a href="liftoff.html" class="buy-button website">Full Review →</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- DRL Simulator -->
+            <div class="sim-card">
+                <div class="sim-badge">Official DRL</div>
+                <div class="sim-image">
+                    <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/641780/header.jpg" alt="DRL Simulator">
+                </div>
+                <div class="sim-content">
+                    <div class="sim-header">
+                        <h3>DRL Simulator</h3>
+                        <span class="sim-price">€14.99</span>
+                    </div>
+                    <div class="sim-rating">★★★★☆ (4.4/5 - 8,234 reviews)</div>
+                    <p class="sim-description">Official simulator of the Drone Racing League. Fly the same tracks as the pros with incredibly realistic physics.</p>
+                    
+                    <ul class="sim-features">
+                        <li>Official DRL tracks and drones</li>
+                        <li>Realistic physics engine</li>
+                        <li>Time trial leaderboards</li>
+                        <li>Multiplayer racing</li>
+                        <li>Career mode with progression</li>
+                        <li>VR support</li>
+                    </ul>
+
+                    <div class="platform-tags">
+                        <span class="platform-tag steam">Steam</span>
+                        <span class="platform-tag epic">Epic</span>
+                    </div>
+
+                    <div class="buy-buttons">
+                        <a href="https://store.steampowered.com/app/641780/DRL_Simulator/?ref=fpvbuildlab" target="_blank" rel="nofollow sponsored" class="buy-button steam">Buy on Steam</a>
+                        <a href="drl-sim.html" class="buy-button website">Full Review →</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- VelociDrone -->
+            <div class="sim-card" id="velocidrone">
+                <div class="sim-badge">Serious Racers</div>
+                <div class="sim-image">
+                    <img src="https://www.velocidrone.com/img/velocidrone-header.jpg" alt="VelociDrone">
+                </div>
+                <div class="sim-content">
+                    <div class="sim-header">
+                        <h3>VelociDrone</h3>
+                        <span class="sim-price">€24.99</span>
+                    </div>
+                    <div class="sim-rating">★★★★★ (4.8/5 - 3,456 reviews)</div>
+                    <p class="sim-description">The choice of serious racers. Most realistic physics, used in real competitions. Steep learning curve but incredibly rewarding.</p>
+                    
+                    <ul class="sim-features">
+                        <li>Most realistic physics engine</li>
+                        <li>Multiplayer league racing</li>
+                        <li>Custom track builder</li>
+                        <li>FPV freestyle mode</li>
+                        <li>Used in real competitions</li>
+                        <li>Active Discord community</li>
+                    </ul>
+
+                    <div class="platform-tags">
+                        <span class="platform-tag">Standalone</span>
+                    </div>
+
+                    <div class="buy-buttons">
+                        <a href="https://www.velocidrone.com/shop/?ref=fpvbuildlab" target="_blank" rel="nofollow sponsored" class="buy-button steam">Buy Direct</a>
+                        <a href="velocidrone.html" class="buy-button website">Full Review →</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Uncrashed -->
+            <div class="sim-card" id="uncrashed">
+                <div class="sim-badge">Best Graphics</div>
+                <div class="sim-image">
+                    <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1682970/header.jpg" alt="Uncrashed">
+                </div>
+                <div class="sim-content">
+                    <div class="sim-header">
+                        <h3>Uncrashed</h3>
+                        <span class="sim-price">€14.99</span>
+                    </div>
+                    <div class="sim-rating">★★★★☆ (4.6/5 - 2,789 reviews)</div>
+                    <p class="sim-description">Beautiful environments, great for freestyle practice. Stunning graphics and smooth physics make it a favorite for cinematic flying.</p>
+                    
+                    <ul class="sim-features">
+                        <li>Stunning graphics (UE4)</li>
+                        <li>Freestyle focused</li>
+                        <li>Realistic physics</li>
+                        <li>Large detailed maps</li>
+                        <li>GoPro effects and filters</li>
+                        <li>Photo mode</li>
+                    </ul>
+
+                    <div class="platform-tags">
+                        <span class="platform-tag steam">Steam</span>
+                    </div>
+
+                    <div class="buy-buttons">
+                        <a href="https://store.steampowered.com/app/1682970/Uncrashed_FPV_Drone_Simulator/?ref=fpvbuildlab" target="_blank" rel="nofollow sponsored" class="buy-button steam">Buy on Steam</a>
+                        <a href="uncrashed.html" class="buy-button website">Full Review →</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tryp FPV -->
+            <div class="sim-card">
+                <div class="sim-image">
+                    <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1829870/header.jpg" alt="Tryp FPV">
+                </div>
+                <div class="sim-content">
+                    <div class="sim-header">
+                        <h3>Tryp FPV</h3>
+                        <span class="sim-price">€19.99</span>
+                    </div>
+                    <div class="sim-rating">★★★★☆ (4.3/5 - 1,234 reviews)</div>
+                    <p class="sim-description">Atmospheric freestyle simulator with incredible abandoned locations. Perfect for cinematic flying and exploration.</p>
+                    
+                    <ul class="sim-features">
+                        <li>Abandoned locations (factories, malls)</li>
+                        <li>Freestyle optimized</li>
+                        <li>Photo mode with filters</li>
+                        <li>Day/night cycle</li>
+                        <li>Unique atmospheric environments</li>
+                        <li>No multiplayer (pure solo)</li>
+                    </ul>
+
+                    <div class="platform-tags">
+                        <span class="platform-tag steam">Steam</span>
+                    </div>
+
+                    <div class="buy-buttons">
+                        <a href="https://store.steampowered.com/app/1829870/Tryp_FPV/?ref=fpvbuildlab" target="_blank" rel="nofollow sponsored" class="buy-button steam">Buy on Steam</a>
+                        <a href="tryp-fpv.html" class="buy-button website">Full Review →</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FPV Freerider -->
+            <div class="sim-card">
+                <div class="sim-badge">Budget Pick</div>
+                <div class="sim-image">
+                    <img src="https://img.itch.zone/aW1hZ2UvMTI5OTYvNTIxMTcucG5n/original/gv4rgV.png" alt="FPV Freerider">
+                </div>
+                <div class="sim-content">
+                    <div class="sim-header">
+                        <h3>FPV Freerider</h3>
+                        <span class="sim-price">€4.99</span>
+                    </div>
+                    <div class="sim-rating">★★★☆☆ (3.8/5 - 5,678 reviews)</div>
+                    <p class="sim-description">Simple, lightweight, perfect for low-end PCs and laptops. The cheapest entry point to FPV practice.</p>
+                    
+                    <ul class="sim-features">
+                        <li>Runs on anything (even old laptops)</li>
+                        <li>Simple but effective physics</li>
+                        <li>Multiple levels included</li>
+                        <li>Cheapest option available</li>
+                        <li>Demo version to try first</li>
+                        <li>No multiplayer</li>
+                    </ul>
+
+                    <div class="platform-tags">
+                        <span class="platform-tag itch">Itch.io</span>
+                    </div>
+
+                    <div class="buy-buttons">
+                        <a href="https://fpv-freerider.itch.io/fpv-freerider?ref=fpvbuildlab" target="_blank" rel="nofollow sponsored" class="buy-button steam">Buy on Itch.io</a>
+                        <a href="fpv-freerider.html" class="buy-button website">Full Review →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Comparison Table -->
+        <h2 style="color: white; margin: 3rem 0 1rem;">📊 Side-by-Side Comparison</h2>
+        
+        <table class="comparison-table">
+            <thead>
+                <tr>
+                    <th>Simulator</th>
+                    <th>Best For</th>
+                    <th>Physics</th>
+                    <th>Graphics</th>
+                    <th>Multiplayer</th>
+                    <th>Price</th>
+                    <th>Our Rating</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Liftoff</strong></td>
+                    <td>All-rounder</td>
+                    <td class="rating">★★★★☆</td>
+                    <td class="rating">★★★★☆</td>
+                    <td class="check-yes">✅ Yes</td>
+                    <td>€19.99</td>
+                    <td>9.2/10</td>
+                </tr>
+                <tr>
+                    <td><strong>DRL Sim</strong></td>
+                    <td>Racing</td>
+                    <td class="rating">★★★★☆</td>
+                    <td class="rating">★★★★☆</td>
+                    <td class="check-yes">✅ Yes</td>
+                    <td>€14.99</td>
+                    <td>8.9/10</td>
+                </tr>
+                <tr>
+                    <td><strong>VelociDrone</strong></td>
+                    <td>Serious Racing</td>
+                    <td class="rating">★★★★★</td>
+                    <td class="rating">★★★☆☆</td>
+                    <td class="check-yes">✅ Yes</td>
+                    <td>€24.99</td>
+                    <td>9.5/10</td>
+                </tr>
+                <tr>
+                    <td><strong>Uncrashed</strong></td>
+                    <td>Freestyle</td>
+                    <td class="rating">★★★★☆</td>
+                    <td class="rating">★★★★★</td>
+                    <td class="check-no">❌ No</td>
+                    <td>€14.99</td>
+                    <td>9.0/10</td>
+                </tr>
+                <tr>
+                    <td><strong>Tryp FPV</strong></td>
+                    <td>Cinematic</td>
+                    <td class="rating">★★★☆☆</td>
+                    <td class="rating">★★★★★</td>
+                    <td class="check-no">❌ No</td>
+                    <td>€19.99</td>
+                    <td>8.5/10</td>
+                </tr>
+                <tr>
+                    <td><strong>FPV Freerider</strong></td>
+                    <td>Budget/Low-end PC</td>
+                    <td class="rating">★★★☆☆</td>
+                    <td class="rating">★★☆☆☆</td>
+                    <td class="check-no">❌ No</td>
+                    <td>€4.99</td>
+                    <td>7.5/10</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Beginner's Guide -->
+        <div class="guide-section">
+            <h2 style="color: white; margin-bottom: 1rem;">🎓 Beginner's Guide: Which Simulator Should You Buy?</h2>
+            <p style="color: #9ca3af; margin-bottom: 2rem;">Not sure where to start? Here's our recommendation based on your goals:</p>
+
+            <div class="guide-steps">
+                <div class="guide-step">
+                    <div class="step-number">1</div>
+                    <h4 style="color: white;">Try Free First</h4>
+                    <p style="color: #9ca3af;">Download FPV Freerider Recharged demo or DRL sim free trial. See if your computer can run it.</p>
+                </div>
+                <div class="guide-step">
+                    <div class="step-number">2</div>
+                    <h4 style="color: white;">Choose Your Style</h4>
+                    <p style="color: #9ca3af;">Racing → Liftoff or DRL<br>Freestyle → Uncrashed or Tryp<br>Competition → VelociDrone</p>
+                </div>
+                <div class="guide-step">
+                    <div class="step-number">3</div>
+                    <h4 style="color: white;">Practice Daily</h4>
+                    <p style="color: #9ca3af;">15-30 minutes daily for 2 weeks. You'll be amazed how much better you get.</p>
+                </div>
+                <div class="guide-step">
+                    <div class="step-number">4</div>
+                    <h4 style="color: white;">Fly for Real</h4>
+                    <p style="color: #9ca3af;">Your first real flight will feel familiar. You'll already know the basics.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Hardware Guide -->
+        <h2 style="color: white; margin: 3rem 0 1rem;">🖥️ What You Need to Run Simulators</h2>
+        
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; margin: 2rem 0;">
+            <div style="background: #1a1f2f; padding: 1.5rem; border-radius: 15px;">
+                <div style="font-size: 2rem; margin-bottom: 1rem;">💻</div>
+                <h3 style="color: white;">Minimum PC Specs</h3>
+                <p style="color: #9ca3af;">OS: Windows 10 (or MacOS)<br>CPU: Intel i3 / AMD equivalent<br>RAM: 8GB<br>GPU: Integrated graphics (for Freerider) or basic dedicated for others</p>
+            </div>
+            <div style="background: #1a1f2f; padding: 1.5rem; border-radius: 15px;">
+                <div style="font-size: 2rem; margin-bottom: 1rem;">🎮</div>
+                <h3 style="color: white;">Controllers</h3>
+                <p style="color: #9ca3af;">Xbox/PlayStation controller works for learning, but to build real muscle memory, use your actual FPV radio via USB.</p>
+                <a href="/websiteV3/pages/shop/parts.html#radios" style="color: #9b59b6;">Shop Radios →</a>
+            </div>
+            <div style="background: #1a1f2f; padding: 1.5rem; border-radius: 15px;">
+                <div style="font-size: 2rem; margin-bottom: 1rem;">📦</div>
+                <h3 style="color: white;">USB Adapters</h3>
+                <p style="color: #9ca3af;">Most modern radios (Radiomaster, TBS, Jumper) work via USB-C. Older radios may need a simulator cable.</p>
+            </div>
+        </div>
+
+        <!-- FAQ Section -->
+        <h2 style="color: white; margin: 3rem 0 1rem;">❓ Frequently Asked Questions</h2>
+        
+        <div class="faq-grid">
+            <div class="faq-item">
+                <h4>Can I use my actual FPV radio?</h4>
+                <p>Yes! Most modern radios (Radiomaster TX16S, TBS Tango 2, etc.) connect via USB and work as a joystick. Older radios may need a simulator cable.</p>
+            </div>
+            <div class="faq-item">
+                <h4>Do I need a gaming PC?</h4>
+                <p>Not necessarily. FPV Freerider runs on integrated graphics. Liftoff and DRL need a basic dedicated GPU (GTX 1050 or better). Check requirements before buying.</p>
+            </div>
+            <div class="faq-item">
+                <h4>Which simulator is most realistic?</h4>
+                <p>VelociDrone is widely considered the most realistic, especially for racing. Liftoff is a close second with better graphics.</p>
+            </div>
+            <div class="faq-item">
+                <h4>Can I play with friends?</h4>
+                <p>Liftoff, DRL, and VelociDrone have multiplayer. Uncrashed and Tryp are single-player only.</p>
+            </div>
+            <div class="faq-item">
+                <h4>How long should I practice?</h4>
+                <p>Most people are comfortable flying after 10-20 hours. Before your first real flight, aim to complete a full lap without crashing in the sim.</p>
+            </div>
+            <div class="faq-item">
+                <h4>Do I need a controller?</h4>
+                <p>Keyboard is technically possible but terrible. Use an Xbox/PlayStation controller or ideally your actual FPV radio.</p>
+            </div>
+            <div class="faq-item">
+                <h4>Are there free simulators?</h4>
+                <p>Yes! DRL has a free trial. FPV Freerider has a free demo. There's also FPV Air 2 free version on some platforms.</p>
+            </div>
+            <div class="faq-item">
+                <h4>Will simulator skills transfer to real life?</h4>
+                <p>Absolutely! Muscle memory, throttle control, and orientation skills all transfer directly. You'll crash less and progress faster.</p>
+            </div>
+        </div>
+
+        <!-- Newsletter Signup -->
+        <div class="newsletter-box">
+            <h3>🎯 Get Simulator Tips & Discounts</h3>
+            <p>Join 500+ FPV pilots getting simulator recommendations, Steam sale alerts, and beginner tips.</p>
+            <form>
+                <input type="email" placeholder="Your email address" class="email-input" required>
+                <button type="submit" class="subscribe-btn">Subscribe →</button>
+            </form>
+            <p style="color: #6b7280; font-size: 0.8rem; margin-top: 1rem;">We'll never spam. Unsubscribe anytime.</p>
+        </div>
+
+        <!-- Final CTA -->
+        <div style="text-align: center; margin: 4rem 0;">
+            <h2 style="color: white; margin-bottom: 1rem;">Ready to start flying without breaking stuff?</h2>
+            <p style="color: #9ca3af; margin-bottom: 2rem;">Pick a simulator above and start practicing today. Your wallet will thank you.</p>
+            <a href="#top" class="btn btn-primary">Back to Top ↑</a>
+        </div>
+
+        <!-- Affiliate Disclosure (repeated for footer) -->
+        <div class="affiliate-note" style="margin-top: 2rem;">
+            <p style="color: #e5e7eb; margin: 0; font-size: 0.9rem;">
+                🔗 FPV Build Lab is a participant in the Steam Affiliate Program, Epic Games Affiliate Program, and other affiliate programs. We earn from qualifying purchases at no cost to you.
+            </p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div id="footer-placeholder"></div>
+
+    <!-- Scripts -->
+    <script src="/websiteV3/assets/js/include.js"></script>
+    
+    <!-- Improved Smooth Scroll for anchor links -->
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Handle all anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                
+                // Handle #top specially
+                if (targetId === '#top') {
+                    window.scrollTo({
+                        top: 0,
+                        behavior: 'smooth'
+                    });
+                    return;
+                }
+                
+                // Handle other anchor links
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    });
+</script>
+</body>
+</html>

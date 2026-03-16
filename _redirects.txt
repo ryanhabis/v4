@@ -1,0 +1,6 @@
+# Redirect old paths
+/pages/index.html  /  301
+/pages/*  /:splat  301
+
+# Custom 404 page
+/*  /404.html  404

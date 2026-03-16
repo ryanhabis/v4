@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ready-to-Fly FPV Drone Kits - DJI & More | FPV Build Lab Ireland</title>
+    
+    <!-- SEO Meta -->
+    <meta name="description" content="Ready-to-fly FPV drone kits in Ireland. DJI Avata 2, Mini 4 Pro, FPV Combo and beginner kits. CE certified, fast shipping from Dublin.">
+    <meta name="keywords" content="DJI drones Ireland, RTF drone kit, FPV kit beginner, DJI Avata 2, DJI Mini 4 Pro, FPV drone ready to fly">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Ready-to-Fly FPV Drone Kits - FPV Build Lab Ireland">
+    <meta property="og:description" content="DJI Authorized Dealer. CE certified RTF kits shipped from Ireland.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://fpvbuildlab.ie/shop/rtf-kits.html">
+    <meta property="og:image" content="/assets/img/global/og-image.jpg">
+    
+    <!-- CSS Files - Updated paths for V3 -->
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="/assets/css/shop.css">
+</head>
+<body>
+
+    <!-- HEADER PLACEHOLDER - Loads from components -->
+    <div id="header-placeholder"></div>
+
+    <!-- Page Header -->
+    <div class="page-header">
+        <span class="save-badge">🇮🇪 Irish Stock - Fast Delivery</span>
+        <h1>Ready-to-Fly FPV Drone Kits</h1>
+        <p>Brand new, sealed, and shipped directly to you. DJI Authorized Dealer + Amazon Fulfilled options.</p>
+        <div style="margin-top: 2rem;">
+            <a href="#products" class="btn btn-primary">Browse Kits</a>
+            <a href="#guide" class="btn btn-secondary">Which DJI is right for you?</a>
+        </div>
+    </div>
+
+    <!-- Trust Banner Placeholder - Optional, loads from components -->
+    <div id="trust-banner-placeholder"></div>
+
+    <!-- Main Container -->
+    <div class="container" id="products">
+        
+        <!-- Category Tabs -->
+        <div class="category-tabs">
+            <button class="category-tab active" onclick="filterProducts('all')">All Kits</button>
+            <button class="category-tab" onclick="filterProducts('dji')">DJI Premium</button>
+            <button class="category-tab" onclick="filterProducts('beginner')">Beginner</button>
+            <button class="category-tab" onclick="filterProducts('cinewhoop')">Cinewhoop</button>
+            <button class="category-tab" onclick="filterProducts('racing')">Racing</button>
+        </div>
+
+        <!-- Products Grid -->
+        <div class="product-grid" id="products-container">
+            <!-- Products loaded via JavaScript -->
+        </div>
+
+        <!-- DJI vs Amazon Info -->
+        <div style="display: flex; gap: 2rem; justify-content: center; margin: 3rem 0; flex-wrap: wrap;">
+            <div style="display: flex; align-items: center; gap: 0.5rem;">
+                <span class="source-badge dji">✈️ DJI Authorized</span>
+                <span style="color: #9ca3af;">Official warranty, Irish stock</span>
+            </div>
+            <div style="display: flex; align-items: center; gap: 0.5rem;">
+                <span class="source-badge amazon">🛒 Amazon Fulfilled</span>
+                <span style="color: #9ca3af;">Prime shipping, easy returns</span>
+            </div>
+        </div>
+
+        <!-- Comparison Guide Section -->
+        <div id="guide" class="comparison-guide">
+            <h2 style="color: white; text-align: center; margin-bottom: 1rem;">🎯 Which DJI Drone is Right for You?</h2>
+            <p style="color: #9ca3af; text-align: center; margin-bottom: 2rem;">Not sure which DJI drone to choose? Here's a quick guide:</p>
+            
+            <div class="guide-grid">
+                <div class="guide-card">
+                    <h4>DJI Avata 2</h4>
+                    <div class="price-tag">€1,299</div>
+                    <div class="best-for">Best for: Immersive FPV</div>
+                    <p style="color: #9ca3af; font-size: 0.9rem;">Complete FPV system with goggles and motion controller. Most immersive experience.</p>
+                    <div style="margin-top: 1rem;">
+                        <span class="btn-small" onclick="filterProducts('avata2')">View Details</span>
+                    </div>
+                </div>
+                
+                <div class="guide-card">
+                    <h4>DJI Mini 4 Pro</h4>
+                    <div class="price-tag">€999</div>
+                    <div class="best-for">Best for: Beginners / Travel</div>
+                    <p style="color: #9ca3af; font-size: 0.9rem;">Under 250g - no registration needed. Professional features in a tiny package.</p>
+                    <div style="margin-top: 1rem;">
+                        <span class="btn-small" onclick="filterProducts('mini4')">View Details</span>
+                    </div>
+                </div>
+                
+                <div class="guide-card">
+                    <h4>DJI FPV</h4>
+                    <div class="price-tag">€1,099</div>
+                    <div class="best-for">Best for: Speed / Racing</div>
+                    <p style="color: #9ca3af; font-size: 0.9rem;">140 km/h top speed. The original DJI FPV experience.</p>
+                    <div style="margin-top: 1rem;">
+                        <span class="btn-small" onclick="filterProducts('fpv')">View Details</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- FAQ Section -->
+        <div class="faq-section">
+            <h2 style="color: white; text-align: center; margin-bottom: 2rem;">❓ Frequently Asked Questions</h2>
+            
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h4>Are these genuine DJI products?</h4>
+                    <p>Yes! We are an authorized DJI dealer. All DJI products come with full official warranty and are sourced from authorized distributors.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h4>What about Amazon products?</h4>
+                    <p>Amazon products are fulfilled by Amazon EU. They come with Amazon's A-to-Z guarantee and return policy. We simply facilitate the order.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h4>Do I need to register my drone?</h4>
+                    <p>Drones over 250g (or with camera) must be registered with the IAA. Mini 4 Pro is under 250g - no registration needed. We provide guidance after purchase.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h4>What's included in the box?</h4>
+                    <p>All kits include everything shown in the product description. DJI kits are factory sealed. Beginner kits include drone, transmitter, goggles, batteries, and charger.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h4>How does warranty work?</h4>
+                    <p>DJI products: Official DJI warranty (register on DJI website). Amazon products: Amazon's return policy applies. We're here to help with any claims.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h4>Shipping times?</h4>
+                    <p>DJI: 2-3 days (from Irish stock). Amazon: Prime shipping (1-3 days). EU: 5-7 days. All prices include Irish VAT.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Compliance Note -->
+        <div class="compliance-note">
+            <strong>📋 CE Certification:</strong> All products sold are CE certified and comply with EU Regulation 2019/945. EU Declarations of Conformity available <a href="/legal/compliance.html">here</a>. DJI products are sourced from authorized distributors with full Irish VAT compliance.
+        </div>
+    </div>
+
+    <!-- FOOTER PLACEHOLDER -->
+    <div id="footer-placeholder"></div>
+
+    <!-- Affiliate Disclosure Placeholder -->
+    <div id="affiliate-disclosure-placeholder"></div>
+
+    <!-- Include the V3 script -->
+    <script src="/assets/js/include.js"></script>
+    
+    <script>
+        // ==================== RTF KITS DATA ====================
+        const rtfKits = [
+            // DJI Products (Dropshipped from Irish distributor)
+            {
+                id: "dji-avata-2",
+                brand: "DJI",
+                name: "DJI Avata 2 Pro-View Combo",
+                category: "dji",
+                filterTag: "avata2",
+                badge: "Best Seller",
+                image: "https://dji-official-fe.djicdn.com/dps/9f8f2c7a6c5a4b3b8e3c9f7d8a9b0c1d.jpg",
+                price: 1299,
+                ceClass: "C1",
+                source: "dji",
+                shipping: "2-3 days from Irish stock",
+                warranty: "DJI Official Warranty",
+                description: "The ultimate immersive FPV experience. Ready to fly out of the box with goggles and motion controller.",
+                specs: {
+                    flightTime: "23 mins",
+                    weight: "458g",
+                    camera: "4K/60fps",
+                    controller: "DJI RC Motion 3"
+                },
+                includes: [
+                    "DJI Avata 2 Drone",
+                    "DJI Goggles 3",
+                    "DJI RC Motion 3",
+                    "2x Intelligent Flight Batteries",
+                    "Battery Charging Hub",
+                    "Spare Props (set)"
+                ]
+            },
+            {
+                id: "dji-mini-4-pro",
+                brand: "DJI",
+                name: "DJI Mini 4 Pro Fly More Combo",
+                category: "dji",
+                filterTag: "mini4",
+                badge: "Under 250g",
+                image: "https://dji-official-fe.djicdn.com/dps/8e7d6c5b4a392817263544536271829.jpg",
+                price: 999,
+                ceClass: "C0",
+                source: "dji",
+                shipping: "2-3 days from Irish stock",
+                warranty: "DJI Official Warranty",
+                description: "No registration needed. Professional features in a sub-250g package with 4K HDR video.",
+                specs: {
+                    flightTime: "34 mins",
+                    weight: "249g",
+                    camera: "4K/60fps HDR",
+                    obstacleSensing: "Omnidirectional"
+                },
+                includes: [
+                    "DJI Mini 4 Pro Drone",
+                    "DJI RC 2 Controller",
+                    "3x Intelligent Flight Batteries",
+                    "Battery Charging Hub",
+                    "Shoulder Bag",
+                    "Spare Props"
+                ]
+            },
+            {
+                id: "dji-fpv",
+                brand: "DJI",
+                name: "DJI FPV Combo",
+                category: "dji",
+                filterTag: "fpv",
+                image: "https://dji-official-fe.djicdn.com/dps/7f6e5d4c3b2a190827364553647281.jpg",
+                price: 1099,
+                ceClass: "C2",
+                source: "dji",
+                shipping: "2-3 days from Irish stock",
+                warranty: "DJI Official Warranty",
+                description: "The original FPV experience from DJI. Racing drone meets consumer ease with 140 km/h top speed.",
+                specs: {
+                    flightTime: "20 mins",
+                    topSpeed: "140 km/h",
+                    camera: "4K/60fps",
+                    controller: "DJI FPV Controller 2"
+                },
+                includes: [
+                    "DJI FPV Drone",
+                    "DJI FPV Goggles V2",
+                    "DJI FPV Controller 2",
+                    "1x Intelligent Flight Battery",
+                    "Spare Props"
+                ]
+            },
+            
+            // Amazon Products (Fulfilled by Amazon)
+            {
+                id: "betafpv-cetus",
+                brand: "BetaFPV",
+                name: "BetaFPV Cetus Pro Kit",
+                category: "beginner",
+                badge: "Best Beginner",
+                image: "https://img.staticbg.com/xx9/9089f2c7a6c5a4b3b8e3c9f7d8a9b0c1d.jpg",
+                price: 199,
+                ceClass: "C0",
+                source: "amazon",
+                amazonUrl: "https://amazon.de/dp/B08XYZ",
+                shipping: "Prime - 1-2 days",
+                warranty: "Amazon A-to-Z Guarantee",
+                description: "Perfect for absolute beginners. Complete kit with drone, transmitter, goggles, batteries and charger.",
+                specs: {
+                    flightTime: "5-7 mins",
+                    weight: "35g",
+                    camera: "600TVL",
+                    controller: "LiteRadio 2"
+                },
+                includes: [
+                    "Cetus Drone",
+                    "LiteRadio 2 Transmitter",
+                    "VR02 Goggles",
+                    "3x Batteries",
+                    "Charger",
+                    "Spare Props"
+                ]
+            },
+            {
+                id: "emax-tinyhawk",
+                brand: "EMAX",
+                name: "EMAX Tinyhawk 2 RTF Kit",
+                category: "beginner",
+                image: "https://img.staticbg.com/xx9/817263544536271829304050607080.jpg",
+                price: 179,
+                ceClass: "C0",
+                source: "amazon",
+                amazonUrl: "https://amazon.de/dp/B07XYZ",
+                shipping: "Prime - 1-2 days",
+                warranty: "Amazon A-to-Z Guarantee",
+                description: "The classic beginner whoop. Durable, fun, and great for learning both indoors and outdoors.",
+                specs: {
+                    flightTime: "5 mins",
+                    weight: "42g",
+                    camera: "800TVL",
+                    controller: "EMAX Transmitter"
+                },
+                includes: [
+                    "Tinyhawk 2 Drone",
+                    "Transmitter",
+                    "Goggles",
+                    "2x Batteries",
+                    "Charger",
+                    "Spare Props"
+                ]
+            },
+            {
+                id: "eachine-novice",
+                brand: "Eachine",
+                name: "Eachine Novice IV RTF Kit",
+                category: "beginner",
+                badge: "Budget Pick",
+                image: "https://img.staticbg.com/xx9/9a8b7c6d5e4f3g2h1i0j9k8l7m6n5o4p.jpg",
+                price: 149,
+                ceClass: "C0",
+                source: "amazon",
+                amazonUrl: "https://amazon.de/dp/B09XYZ",
+                shipping: "Prime - 1-2 days",
+                warranty: "Amazon A-to-Z Guarantee",
+                description: "Cheapest way to start FPV. Includes 4K camera and full controller. Great for testing the hobby.",
+                specs: {
+                    flightTime: "8 mins",
+                    camera: "4K",
+                    controller: "FlySky FS-i6",
+                    weight: "85g"
+                },
+                includes: [
+                    "Novice IV Drone",
+                    "FlySky FS-i6 Controller",
+                    "VR006 Goggles",
+                    "2x Batteries",
+                    "Charger"
+                ]
+            },
+            {
+                id: "geprc-cinelog",
+                brand: "GEPRC",
+                name: "GEPRC CineLog 35 Cinewhoop",
+                category: "cinewhoop",
+                badge: "GoPro Ready",
+                image: "https://img.staticbg.com/xx9/1a2b3c4d5e6f7g8h9i0j1k2l3m4n5o6p.jpg",
+                price: 449,
+                ceClass: "C1",
+                source: "amazon",
+                amazonUrl: "https://amazon.de/dp/B0CXYZ",
+                shipping: "Prime - 1-2 days",
+                warranty: "Amazon A-to-Z Guarantee",
+                description: "Smooth cinematic flights with GoPro. Ducted design for safety. Perfect for real estate and indoor flying.",
+                specs: {
+                    flightTime: "6-8 mins",
+                    weight: "185g",
+                    camera: "GoPro Compatible",
+                    size: "3.5 inch"
+                },
+                includes: [
+                    "CineLog 35 Drone",
+                    "Spare Props (2 sets)",
+                    "Battery Strap",
+                    "USB Cable"
+                ]
+            }
+        ];
+
+        // ==================== RENDER FUNCTION ====================
+        function renderProducts(filter = 'all') {
+            const container = document.getElementById('products-container');
+            
+            let filteredKits = rtfKits;
+            
+            if (filter === 'dji') {
+                filteredKits = rtfKits.filter(kit => kit.source === 'dji');
+            } else if (filter === 'beginner') {
+                filteredKits = rtfKits.filter(kit => kit.category === 'beginner');
+            } else if (filter === 'cinewhoop') {
+                filteredKits = rtfKits.filter(kit => kit.category === 'cinewhoop');
+            } else if (filter === 'racing') {
+                filteredKits = rtfKits.filter(kit => kit.category === 'racing');
+            } else if (filter === 'avata2') {
+                filteredKits = rtfKits.filter(kit => kit.filterTag === 'avata2');
+            } else if (filter === 'mini4') {
+                filteredKits = rtfKits.filter(kit => kit.filterTag === 'mini4');
+            } else if (filter === 'fpv') {
+                filteredKits = rtfKits.filter(kit => kit.filterTag === 'fpv');
+            }
+            
+            container.innerHTML = filteredKits.map(kit => `
+                <div class="product-card">
+                    ${kit.badge ? `<div class="product-badge">${kit.badge}</div>` : ''}
+                    
+                    <div class="product-image">
+                        <img src="${kit.image}" alt="${kit.name}">
+                    </div>
+                    
+                    <div class="product-content">
+                        <span class="source-badge ${kit.source}">
+                            ${kit.source === 'dji' ? '✈️ DJI Authorized' : '🛒 Amazon Fulfilled'}
+                        </span>
+                        
+                        <div class="product-title">
+                            <h3>${kit.name}</h3>
+                            <span class="ce-badge">CE ${kit.ceClass}</span>
+                        </div>
+                        
+                        <p class="product-description">${kit.description}</p>
+                        
+                        <div class="quick-specs">
+                            <span>⏱️ ${kit.specs.flightTime || kit.specs.flightTime}</span>
+                            <span>⚖️ ${kit.specs.weight || 'N/A'}</span>
+                            <span>📷 ${kit.specs.camera || 'HD'}</span>
+                        </div>
+                        
+                        <div class="shipping-badge ${kit.source}">
+                            ${kit.source === 'dji' ? '🇮🇪 ' + kit.shipping : '📦 ' + kit.shipping}
+                        </div>
+                        
+                        <div class="warranty-badge">
+                            <span>✅ ${kit.warranty}</span>
+                            ${kit.source === 'amazon' ? '<span>🔄 30-Day Returns</span>' : ''}
+                        </div>
+                        
+                        <div class="includes-list">
+                            <h4>📦 Includes:</h4>
+                            <ul>
+                                ${kit.includes.slice(0, 4).map(item => `<li>${item}</li>`).join('')}
+                                ${kit.includes.length > 4 ? '<li>+ more</li>' : ''}
+                            </ul>
+                        </div>
+                        
+                        <div class="product-footer">
+                            <span class="product-price">€${kit.price}</span>
+                            
+                            ${kit.source === 'dji' ? 
+                                `<button class="btn-primary" onclick="buyNow('${kit.id}')">Order Now</button>` : 
+                                `<a href="${kit.amazonUrl}" target="_blank" rel="nofollow sponsored" class="btn-primary" style="text-decoration: none;">Check on Amazon</a>`
+                            }
+                        </div>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        // ==================== FILTER FUNCTION ====================
+        window.filterProducts = function(category) {
+            // Update active tab
+            document.querySelectorAll('.category-tab').forEach(tab => {
+                tab.classList.remove('active');
+            });
+            event.target.classList.add('active');
+            
+            // Render filtered products
+            renderProducts(category);
+        };
+
+        // ==================== BUY FUNCTION ====================
+        window.buyNow = function(productId) {
+            const product = rtfKits.find(k => k.id === productId);
+            if (product) {
+                if (product.source === 'dji') {
+                    alert(`Thank you for your interest in the ${product.name}!\n\nThis is a DJI dropship item. Please email builds@fpvbuildlab.ie with:\n\n- Product: ${product.name}\n- Your name and address\n- Any questions\n\nWe'll respond within 24 hours with payment details and shipping confirmation.`);
+                }
+            }
+        };
+
+        // ==================== INITIALIZE ====================
+        document.addEventListener('DOMContentLoaded', function() {
+            renderProducts();
+        });
+    </script>
+    
+    <!-- Simple Cart Script -->
+    <script>
+        function toggleCart() {
+            alert('Cart functionality coming soon! For now, email builds@fpvbuildlab.ie to order.');
+        }
+    </script>
+</body>
+</html>
