@@ -31,14 +31,14 @@ function initMobileMenu() {
 
 document.addEventListener('DOMContentLoaded', function() {
     // Paths go UP one level (../) since we're in /pages/ folder
-    loadComponent('header-placeholder', 'components/header.html');
-    loadComponent('footer-placeholder', 'components/footer.html');
+    loadComponent('header-placeholder', '/components/header.html');
+    loadComponent('footer-placeholder', '/components/footer.html');
     
     if (document.getElementById('trust-banner-placeholder')) {
-        loadComponent('trust-banner-placeholder', 'components/trust-banner.html');
+        loadComponent('trust-banner-placeholder', '/components/trust-banner.html');
     }
     
     if (document.getElementById('affiliate-disclosure-placeholder')) {
-        loadComponent('affiliate-disclosure-placeholder', 'components/affiliate-disclosure.html');
+        loadComponent('affiliate-disclosure-placeholder', '/components/affiliate-disclosure.html');
     }
 });
