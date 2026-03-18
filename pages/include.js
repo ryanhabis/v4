@@ -1,7 +1,16 @@
-// include.js - V3 Version
+// include.js - V4 Version with Local/Server path handling
 function loadComponent(elementId, componentPath) {
-    // Get the correct path based on environment
-    const fullPath = getFullPath(componentPath);
+    // Auto-detect if running locally
+    const isLocal = window.location.protocol === 'file:';
+    
+    // Adjust path based on environment
+    let fullPath = componentPath;
+    
+    if (isLocal) {
+        // Local: Remove leading slash and add '../' since we're in /pages/
+        fullPath = '..' + componentPath;
+    }
+    // On server: keep as-is (/components/header.html)
     
     fetch(fullPath)
         .then(response => {
@@ -12,36 +21,19 @@ function loadComponent(elementId, componentPath) {
         })
         .then(data => {
             document.getElementById(elementId).innerHTML = data;
+            
+            // Initialize specific components
             if (componentPath.includes('header.html')) {
                 initMobileMenu();
             }
+            // Add CSS files from components if needed
+            addComponentStyles(data);
         })
         .catch(error => {
             console.error('Error loading component:', error);
-            // Optional: Show fallback content
-            document.getElementById(elementId).innerHTML = '<p>Error loading component</p>';
+            // Fallback content
+            document.getElementById(elementId).innerHTML = `<div style="color: red; padding: 1rem;">Failed to load component</div>`;
         });
-}
-
-function getFullPath(componentPath) {
-    // Check if we're on localhost or file protocol
-    const isLocal = window.location.hostname === 'localhost' || 
-                    window.location.hostname === '127.0.0.1' ||
-                    window.location.protocol === 'file:';
-    
-    if (isLocal) {
-        // Local development - use relative paths
-        // Count directory depth for proper relative path
-        const depth = (window.location.pathname.match(/\//g) || []).length - 1;
-        let prefix = '';
-        for (let i = 0; i < depth; i++) {
-            prefix += '../';
-        }
-        return prefix + componentPath;
-    } else {
-        // Live server - use absolute paths
-        return '/' + componentPath;
-    }
 }
 
 function initMobileMenu() {
@@ -52,26 +44,29 @@ function initMobileMenu() {
         menuToggle.addEventListener('click', function() {
             navLinks.classList.toggle('active');
         });
-        
-        // Close menu when clicking outside
-        document.addEventListener('click', function(event) {
-            if (!menuToggle.contains(event.target) && !navLinks.contains(event.target)) {
-                navLinks.classList.remove('active');
-            }
-        });
     }
 }
 
+function addComponentStyles(html) {
+    // Extract and add any inline styles from components
+    const tempDiv = document.createElement('div');
+    tempDiv.innerHTML = html;
+    const styles = tempDiv.querySelectorAll('style');
+    styles.forEach(style => {
+        document.head.appendChild(style.cloneNode(true));
+    });
+}
+
 document.addEventListener('DOMContentLoaded', function() {
-    // Use clean component names (no leading slash)
-    loadComponent('header-placeholder', 'components/header.html');
-    loadComponent('footer-placeholder', 'components/footer.html');
+    // Load components with paths that work both locally and on server
+    loadComponent('header-placeholder', '/components/header.html');
+    loadComponent('footer-placeholder', '/components/footer.html');
     
     if (document.getElementById('trust-banner-placeholder')) {
-        loadComponent('trust-banner-placeholder', 'components/trust-banner.html');
+        loadComponent('trust-banner-placeholder', '/components/trust-banner.html');
     }
     
     if (document.getElementById('affiliate-disclosure-placeholder')) {
-        loadComponent('affiliate-disclosure-placeholder', 'components/affiliate-disclosure.html');
+        loadComponent('affiliate-disclosure-placeholder', '/components/affiliate-disclosure.html');
     }
 });
