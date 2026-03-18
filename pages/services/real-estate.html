@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Estate Aerial Media | FPV Build Lab</title>
+    
+    <!-- SEO Meta -->
+    <meta name="description" content="Professional aerial photography and video for Irish real estate. Sell properties faster with stunning drone media. Fully insured.">
+    <meta name="keywords" content="real estate drone photography Ireland, aerial property photos, property video, estate agent drone services">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Real Estate Aerial Media | FPV Build Lab">
+    <meta property="og:description" content="Sell properties faster with stunning aerial photos and cinematic videos.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://fpvbuildlab.com/services/real-estate.html">
+    <meta property="og:image" content="../assets/img/services/real-estate-og.jpg">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/home.css">
+    
+    <style>
+        .service-hero {
+            background: linear-gradient(135deg, #0f1422 0%, #1a1f2f 100%);
+            padding: 8rem 2rem 4rem;
+            border-bottom: 1px solid #2d3748;
+        }
+        
+        .service-hero-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+        
+        .service-hero-text h1 {
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+            background: linear-gradient(135deg, #fff, #94a3b8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .service-icon-large {
+            font-size: 8rem;
+            text-align: center;
+            filter: drop-shadow(0 10px 20px rgba(96, 165, 250, 0.3));
+        }
+        
+        .package-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin: 4rem 0;
+        }
+        
+        .package-card {
+            background: #1a1f2f;
+            border: 1px solid #2d3748;
+            border-radius: 20px;
+            padding: 2rem;
+            transition: transform 0.3s;
+            position: relative;
+        }
+        
+        .package-card:hover {
+            transform: translateY(-5px);
+            border-color: #60a5fa;
+        }
+        
+        .package-card.popular {
+            border: 2px solid #60a5fa;
+            transform: scale(1.05);
+        }
+        
+        .popular-badge {
+            position: absolute;
+            top: -12px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #60a5fa;
+            color: white;
+            padding: 0.3rem 1rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: bold;
+        }
+        
+        .package-price {
+            font-size: 2.5rem;
+            color: white;
+            margin: 1rem 0;
+        }
+        
+        .package-price span {
+            font-size: 1rem;
+            color: #9ca3af;
+        }
+        
+        .package-features {
+            list-style: none;
+            padding: 0;
+            margin: 2rem 0;
+        }
+        
+        .package-features li {
+            color: #9ca3af;
+            margin-bottom: 0.8rem;
+            display: flex;
+            align-items: center;
+        }
+        
+        .package-features li:before {
+            content: "✓";
+            color: #60a5fa;
+            margin-right: 0.5rem;
+        }
+        
+        .sample-gallery {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+        
+        .gallery-item {
+            background: linear-gradient(135deg, #1e293b, #0f172a);
+            border-radius: 10px;
+            aspect-ratio: 16/9;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #2d3748;
+            color: #60a5fa;
+            font-size: 2rem;
+        }
+        
+        .testimonial {
+            background: #1a1f2f;
+            border-radius: 20px;
+            padding: 2rem;
+            border: 1px solid #2d3748;
+            margin: 2rem 0;
+        }
+        
+        @media (max-width: 768px) {
+            .service-hero-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+            
+            .package-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .package-card.popular {
+                transform: none;
+            }
+            
+            .sample-gallery {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div id="header-placeholder"></div>
+
+    <!-- Hero Section -->
+    <section class="service-hero">
+        <div class="service-hero-content">
+            <div class="service-hero-text">
+                <span class="badge" style="margin-bottom: 1rem;">🏠 REAL ESTATE MEDIA</span>
+                <h1>Sell Properties Faster with Aerial Media</h1>
+                <p style="font-size: 1.2rem; color: #9ca3af; margin-bottom: 2rem;">Properties with aerial photos sell 68% faster. Show the full potential with cinematic videos and high-res photography.</p>
+                <div class="hero-badges">
+                    <span class="badge">✅ 4K Video</span>
+                    <span class="badge">📸 20MP Photos</span>
+                    <span class="badge">⚡ 24hr Turnaround</span>
+                    <span class="badge">🏷️ Twilight Shots</span>
+                </div>
+                <div style="margin-top: 2rem;">
+                    <a href="#packages" class="btn btn-primary">View Packages</a>
+                    <a href="#quote" class="btn btn-secondary">Get a Quote</a>
+                </div>
+            </div>
+            <div class="service-icon-large">
+                🏠
+            </div>
+        </div>
+    </section>
+
+    <div id="trust-banner-placeholder"></div>
+
+    <!-- Packages -->
+    <section class="section" id="packages">
+        <div class="container">
+            <div class="section-title">
+                <h2>Simple, Transparent Pricing</h2>
+                <p>Choose the package that fits your property</p>
+            </div>
+            
+            <div class="package-grid">
+                <!-- Basic Package -->
+                <div class="package-card">
+                    <h3 style="color: white;">Essential</h3>
+                    <div class="package-price">€249<span>/property</span></div>
+                    <p style="color: #9ca3af;">Perfect for standard listings</p>
+                    <ul class="package-features">
+                        <li>10 high-res photos</li>
+                        <li>2-minute aerial video</li>
+                        <li>Online gallery</li>
+                        <li>48hr delivery</li>
+                        <li>Property boundary context</li>
+                    </ul>
+                    <a href="#quote" class="btn btn-secondary" style="width: 100%;">Choose Plan</a>
+                </div>
+                
+                <!-- Popular Package -->
+                <div class="package-card popular">
+                    <div class="popular-badge">MOST POPULAR</div>
+                    <h3 style="color: white;">Professional</h3>
+                    <div class="package-price">€399<span>/property</span></div>
+                    <p style="color: #9ca3af;">Complete media package</p>
+                    <ul class="package-features">
+                        <li>25 high-res photos</li>
+                        <li>3-minute cinematic video</li>
+                        <li>Twilight "agent shots"</li>
+                        <li>Social media clips</li>
+                        <li>24hr delivery</li>
+                        <li>Drone + ground photography</li>
+                    </ul>
+                    <a href="#quote" class="btn btn-primary" style="width: 100%;">Choose Plan</a>
+                </div>
+                
+                <!-- Premium Package -->
+                <div class="package-card">
+                    <h3 style="color: white;">Premium</h3>
+                    <div class="package-price">€599<span>/property</span></div>
+                    <p style="color: #9ca3af;">Luxury & development</p>
+                    <ul class="package-features">
+                        <li>40+ high-res photos</li>
+                        <li>4-5 minute cinematic video</li>
+                        <li>Sunrise + sunset shoots</li>
+                        <li>3D property tour</li>
+                        <li>Same-day rush available</li>
+                        <li>Marketing rights included</li>
+                    </ul>
+                    <a href="#quote" class="btn btn-secondary" style="width: 100%;">Choose Plan</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sample Gallery -->
+    <section class="section" style="background: #0f1422;">
+        <div class="container">
+            <div class="section-title">
+                <h2>Sample Work</h2>
+                <p>See the quality for yourself</p>
+            </div>
+            
+            <div class="sample-gallery">
+                <div class="gallery-item">🏠</div>
+                <div class="gallery-item">🏡</div>
+                <div class="gallery-item">🏘️</div>
+                <div class="gallery-item">🌅</div>
+            </div>
+            
+            <div style="text-align: center; margin-top: 2rem;">
+                <p style="color: #9ca3af;">Contact us for a full portfolio of recent work</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Why Irish Estate Agents Choose Us</h2>
+            </div>
+            
+            <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 2rem;">
+                <div>
+                    <h3 style="color: white; margin-bottom: 1rem;">Professional Standards</h3>
+                    <ul class="feature-list">
+                        <li>Fully insured (€2M public liability)</li>
+                        <li>Licensed and certified pilots</li>
+                        <li>Discreet, professional operation</li>
+                        <li>Weather monitoring and backup dates</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 style="color: white; margin-bottom: 1rem;">Marketing Ready</h3>
+                    <ul class="feature-list">
+                        <li>Optimized for Daft.ie and MyHome.ie</li>
+                        <li>Social media ready clips</li>
+                        <li>High-res for print brochures</li>
+                        <li>Drone + ground photography</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="testimonial">
+                <p style="color: #e5e7eb; font-size: 1.1rem; margin-bottom: 1rem;">"The aerial shots made this property stand out from every other listing. Sold in 10 days at asking price."</p>
+                <p style="color: #60a5fa;">— Sarah Kelly, Kelly Estate Agents</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quote Form -->
+    <section class="section" id="quote" style="background: #0f1422;">
+        <div class="container">
+            <div class="section-title">
+                <h2>Ready to List?</h2>
+                <p>Get a quote for your property in 24 hours</p>
+            </div>
+            
+            <div style="max-width: 600px; margin: 0 auto;">
+                <form style="display: flex; flex-direction: column; gap: 1rem;">
+                    <input type="text" placeholder="Your Name / Agency" style="padding: 1rem; background: #1a1f2f; border: 1px solid #2d3748; border-radius: 8px; color: white;">
+                    <input type="email" placeholder="Email Address" style="padding: 1rem; background: #1a1f2f; border: 1px solid #2d3748; border-radius: 8px; color: white;">
+                    <input type="tel" placeholder="Phone Number" style="padding: 1rem; background: #1a1f2f; border: 1px solid #2d3748; border-radius: 8px; color: white;">
+                    <input type="text" placeholder="Property Address" style="padding: 1rem; background: #1a1f2f; border: 1px solid #2d3748; border-radius: 8px; color: white;">
+                    <select style="padding: 1rem; background: #1a1f2f; border: 1px solid #2d3748; border-radius: 8px; color: white;">
+                        <option>Select Package</option>
+                        <option>Essential (€249)</option>
+                        <option>Professional (€399)</option>
+                        <option>Premium (€599)</option>
+                        <option>Custom Quote</option>
+                    </select>
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">Get Quote</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <div id="footer-placeholder"></div>
+    <div id="affiliate-disclosure-placeholder"></div>
+    
+    <script src="../include.js"></script>
+</body>
+</html>

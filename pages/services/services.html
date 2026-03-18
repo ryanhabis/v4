@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Drone Services | FPV Build Lab Ireland</title>
+    
+    <!-- SEO Meta -->
+    <meta name="description" content="Professional drone services in Ireland: Real estate aerial media, industrial inspections, and surveying/mapping. Fully insured and CE-certified operations.">
+    <meta name="keywords" content="drone services Ireland, aerial photography, drone inspections, surveying, mapping, Irish drone services">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Professional Drone Services | FPV Build Lab Ireland">
+    <meta property="og:description" content="Aerial media, industrial inspections, and precision surveying for Irish businesses.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://fpvbuildlab.com/services/">
+    <meta property="og:image" content="../assets/img/services/services-og.jpg">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/home.css">
+    
+    <style>
+        /* Services Hub Specific Styles */
+        .services-hero {
+            min-height: 60vh;
+            background: radial-gradient(circle at 80% 30%, #1e293b 0%, #0a0f1e 80%);
+            display: flex;
+            align-items: center;
+            padding: 8rem 2rem 4rem;
+            text-align: center;
+        }
+        
+        .services-hero-content {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        .services-hero h1 {
+            font-size: 3.5rem;
+            line-height: 1.2;
+            margin-bottom: 1.5rem;
+            background: linear-gradient(135deg, #fff, #94a3b8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .services-hero p {
+            font-size: 1.3rem;
+            color: #9ca3af;
+            margin-bottom: 2rem;
+        }
+        
+        .service-showcase {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin: 4rem 0;
+        }
+        
+        .service-showcase-card {
+            background: #1a1f2f;
+            border: 1px solid #2d3748;
+            border-radius: 30px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            color: inherit;
+            position: relative;
+        }
+        
+        .service-showcase-card:hover {
+            transform: translateY(-15px);
+            border-color: #60a5fa;
+            box-shadow: 0 30px 50px rgba(96, 165, 250, 0.25);
+        }
+        
+        .service-showcase-image {
+            height: 220px;
+            background: linear-gradient(135deg, #1e293b, #0f172a);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-bottom: 1px solid #2d3748;
+            font-size: 5rem;
+        }
+        
+        .service-showcase-content {
+            padding: 2rem;
+        }
+        
+        .service-showcase-content h2 {
+            font-size: 1.8rem;
+            color: white;
+            margin-bottom: 0.8rem;
+        }
+        
+        .service-showcase-content p {
+            color: #9ca3af;
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+        }
+        
+        .service-tags {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+            margin-bottom: 1.5rem;
+        }
+        
+        .service-tag {
+            background: rgba(96, 165, 250, 0.1);
+            border: 1px solid #60a5fa;
+            color: #60a5fa;
+            padding: 0.2rem 0.8rem;
+            border-radius: 50px;
+            font-size: 0.8rem;
+        }
+        
+        .service-cta {
+            display: inline-block;
+            color: #60a5fa;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+        
+        .service-cta:hover {
+            transform: translateX(5px);
+        }
+        
+        .why-choose-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+        
+        .why-choose-item {
+            text-align: center;
+            padding: 2rem;
+            background: #1a1f2f;
+            border-radius: 20px;
+            border: 1px solid #2d3748;
+            transition: all 0.3s;
+        }
+        
+        .why-choose-item:hover {
+            border-color: #60a5fa;
+        }
+        
+        .why-choose-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .why-choose-item h4 {
+            color: white;
+            margin-bottom: 0.5rem;
+        }
+        
+        .why-choose-item p {
+            color: #9ca3af;
+            font-size: 0.9rem;
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 3rem;
+            margin: 4rem 0;
+            text-align: center;
+        }
+        
+        .stat-number {
+            font-size: 3rem;
+            font-weight: bold;
+            color: #60a5fa;
+            margin-bottom: 0.5rem;
+        }
+        
+        .stat-label {
+            color: #9ca3af;
+            font-size: 1.1rem;
+        }
+        
+        .faq-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .faq-item {
+            background: #1a1f2f;
+            border: 1px solid #2d3748;
+            border-radius: 15px;
+            padding: 1.5rem;
+        }
+        
+        .faq-item h4 {
+            color: white;
+            margin-bottom: 0.8rem;
+            font-size: 1.2rem;
+        }
+        
+        .faq-item p {
+            color: #9ca3af;
+        }
+        
+        @media (max-width: 768px) {
+            .services-hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .service-showcase {
+                grid-template-columns: 1fr;
+            }
+            
+            .why-choose-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .stats-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+            
+            .faq-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .why-choose-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <div id="header-placeholder"></div>
+
+    <!-- Hero Section -->
+    <section class="services-hero">
+        <div class="services-hero-content">
+            <span class="badge" style="margin-bottom: 1.5rem;">🚁 PROFESSIONAL DRONE SERVICES</span>
+            <h1>Aerial Intelligence for Irish Business</h1>
+            <p>From stunning property media to critical infrastructure inspections, our certified pilots deliver professional-grade results across Ireland.</p>
+            <div class="hero-badges" style="justify-content: center;">
+                <span class="badge">✅ Fully Insured</span>
+                <span class="badge">📋 CE Certified</span>
+                <span class="badge">🇮🇪 Nationwide</span>
+                <span class="badge">⚡ Fast Turnaround</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Banner -->
+    <div id="trust-banner-placeholder"></div>
+
+    <!-- Main Services Showcase -->
+    <section class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Services</h2>
+                <p>Professional aerial solutions tailored to your industry</p>
+            </div>
+            
+            <div class="service-showcase">
+                
+                <!-- Real Estate -->
+                <a href="real-estate.html" class="service-showcase-card">
+                    <div class="service-showcase-image">
+                        <span>🏠</span>
+                    </div>
+                    <div class="service-showcase-content">
+                        <div class="service-tags">
+                            <span class="service-tag">Photography</span>
+                            <span class="service-tag">Video</span>
+                            <span class="service-tag">Twilight</span>
+                        </div>
+                        <h2>Real Estate Media</h2>
+                        <p>Sell properties 68% faster with stunning aerial photos and cinematic videos. Perfect for estate agents, hotels, and Airbnb hosts.</p>
+                        <span class="service-cta">Learn more →</span>
+                    </div>
+                </a>
+                
+                <!-- Inspections -->
+                <a href="inspections.html" class="service-showcase-card">
+                    <div class="service-showcase-image">
+                        <span>🏭</span>
+                    </div>
+                    <div class="service-showcase-content">
+                        <div class="service-tags">
+                            <span class="service-tag">Thermal</span>
+                            <span class="service-tag">Solar</span>
+                            <span class="service-tag">Infrastructure</span>
+                        </div>
+                        <h2>Industrial Inspections</h2>
+                        <p>Safe, efficient inspections for solar farms, infrastructure, and agriculture. Access hard-to-reach areas without scaffolding.</p>
+                        <span class="service-cta">Learn more →</span>
+                    </div>
+                </a>
+                
+                <!-- Surveying -->
+                <a href="surveying.html" class="service-showcase-card">
+                    <div class="service-showcase-image">
+                        <span>🗺️</span>
+                    </div>
+                    <div class="service-showcase-content">
+                        <div class="service-tags">
+                            <span class="service-tag">3D Models</span>
+                            <span class="service-tag">RTK GPS</span>
+                            <span class="service-tag">Volume</span>
+                        </div>
+                        <h2>Surveying & Mapping</h2>
+                        <p>Centimeter-accurate orthomosaic maps, 3D models, and measurements for construction, roofing, and land development.</p>
+                        <span class="service-cta">Learn more →</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="section" style="background: #0f1422;">
+        <div class="container">
+            <div class="section-title">
+                <h2>Why Choose FPV Build Lab</h2>
+                <p>Professional standards, local knowledge, certified pilots</p>
+            </div>
+            
+            <div class="why-choose-grid">
+                <div class="why-choose-item">
+                    <div class="why-choose-icon">📋</div>
+                    <h4>Certified Pilots</h4>
+                    <p>All flights conducted by licensed, experienced pilots</p>
+                </div>
+                
+                <div class="why-choose-item">
+                    <div class="why-choose-icon">🛡️</div>
+                    <h4>Fully Insured</h4>
+                    <p>€2M public liability insurance for peace of mind</p>
+                </div>
+                
+                <div class="why-choose-item">
+                    <div class="why-choose-icon">⚖️</div>
+                    <h4>CE Certified</h4>
+                    <p>Full EU compliance and safety certifications</p>
+                </div>
+                
+                <div class="why-choose-item">
+                    <div class="why-choose-icon">🇮🇪</div>
+                    <h4>Irish Owned</h4>
+                    <p>Local knowledge, nationwide coverage</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats -->
+    <section class="section">
+        <div class="container">
+            <div class="stats-grid">
+                <div>
+                    <div class="stat-number">250+</div>
+                    <div class="stat-label">Projects Completed</div>
+                </div>
+                <div>
+                    <div class="stat-number">100%</div>
+                    <div class="stat-label">CE Compliant</div>
+                </div>
+                <div>
+                    <div class="stat-number">24h</div>
+                    <div class="stat-label">Typical Turnaround</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Industries We Serve -->
+    <section class="section" style="background: #0f1422;">
+        <div class="container">
+            <div class="section-title">
+                <h2>Industries We Serve</h2>
+                <p>Tailored solutions for diverse sectors</p>
+            </div>
+            
+            <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; text-align: center;">
+                <div style="padding: 1.5rem;">
+                    <div style="font-size: 2rem; margin-bottom: 0.5rem;">🏠</div>
+                    <div style="color: white;">Real Estate</div>
+                </div>
+                <div style="padding: 1.5rem;">
+                    <div style="font-size: 2rem; margin-bottom: 0.5rem;">☀️</div>
+                    <div style="color: white;">Solar Energy</div>
+                </div>
+                <div style="padding: 1.5rem;">
+                    <div style="font-size: 2rem; margin-bottom: 0.5rem;">🏗️</div>
+                    <div style="color: white;">Construction</div>
+                </div>
+                <div style="padding: 1.5rem;">
+                    <div style="font-size: 2rem; margin-bottom: 0.5rem;">🌾</div>
+                    <div style="color: white;">Agriculture</div>
+                </div>
+                <div style="padding: 1.5rem;">
+                    <div style="font-size: 2rem; margin-bottom: 0.5rem;">🌉</div>
+                    <div style="color: white;">Infrastructure</div>
+                </div>
+                <div style="padding: 1.5rem;">
+                    <div style="font-size: 2rem; margin-bottom: 0.5rem;">🏭</div>
+                    <div style="color: white;">Industrial</div>
+                </div>
+                <div style="padding: 1.5rem;">
+                    <div style="font-size: 2rem; margin-bottom: 0.5rem;">🏨</div>
+                    <div style="color: white;">Hospitality</div>
+                </div>
+                <div style="padding: 1.5rem;">
+                    <div style="font-size: 2rem; margin-bottom: 0.5rem;">📋</div>
+                    <div style="color: white;">Insurance</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Frequently Asked Questions</h2>
+                <p>Everything you need to know about our services</p>
+            </div>
+            
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h4>Are you fully insured?</h4>
+                    <p>Yes, we carry €2M public liability insurance and all pilots are fully certified.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h4>What areas do you cover?</h4>
+                    <p>We operate nationwide across Ireland. Travel fees may apply for remote locations.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h4>How fast can you deliver?</h4>
+                    <p>Most projects are delivered within 24-48 hours. Rush services available.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h4>Do you need site access?</h4>
+                    <p>We need safe takeoff/landing areas and will coordinate access with you.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h4>What about bad weather?</h4>
+                    <p>We monitor conditions closely and will reschedule if unsafe - no charge.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h4>How do I get a quote?</h4>
+                    <p>Contact us through any service page - we'll respond within 24 hours.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section" style="background: linear-gradient(135deg, #1e293b, #0f172a);">
+        <div class="container" style="text-align: center;">
+            <h2 style="color: white; font-size: 2.5rem; margin-bottom: 1rem;">Ready to Get Started?</h2>
+            <p style="color: #9ca3af; font-size: 1.2rem; margin-bottom: 2rem; max-width: 600px; margin-left: auto; margin-right: auto;">
+                Contact us today for a free consultation and quote.
+            </p>
+            <div>
+                <a href="real-estate.html" class="btn btn-primary">Explore Services</a>
+                <a href="resources/contact.html" class="btn btn-secondary">Contact Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <div id="footer-placeholder"></div>
+    
+    <!-- Affiliate Disclosure -->
+    <div id="affiliate-disclosure-placeholder"></div>
+
+    <!-- Scripts -->
+    <script src="../include.js"></script>
+</body>
+</html>
